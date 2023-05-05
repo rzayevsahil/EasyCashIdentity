@@ -27,6 +27,8 @@ namespace EasyCashIdentityProject.BusinessLayer.ValidationRules.AppUserValidatio
 
             RuleFor(x => x.ConfirmPassword).Equal(x=>x.Password).WithMessage("Parolalarınız eşleşmiyor");
             RuleFor(x => x.Email).EmailAddress().WithMessage("Lütfen geçerli bir mail adresi giriniz");
+
+            //@"^[a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
         }
     }
 }
