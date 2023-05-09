@@ -29,7 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\" />
     <Folder Include="ValidationRules\AppRoleValidationRules\" />
     <Folder Include="ValidationRules\CustomerAccountValidationRules\" />
     <Folder Include="ValidationRules\CustomerAccountProcessValidationRules\" />
