@@ -25,7 +25,7 @@ namespace EasyCashIdentityProject.BusinessLayer.ValidationRules.AppUserValidatio
             RuleFor(x => x.Surname).MaximumLength(30).WithMessage("Lütfen en fazla 30 karakter giriniz");
             RuleFor(x => x.Surname).MinimumLength(2).WithMessage("Lütfen en az 2 karakter giriniz");
 
-            RuleFor(x => x.ConfirmPassword).Equal(x=>x.Password).WithMessage("Parolalarınız eşleşmiyor");
+            RuleFor(x => x.ConfirmPassword).Matches(x=>x.Password).WithMessage("Parolalarınız eşleşmiyor");
             RuleFor(x => x.Email).EmailAddress().WithMessage("Lütfen geçerli bir mail adresi giriniz");
 
             //@"^[a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
