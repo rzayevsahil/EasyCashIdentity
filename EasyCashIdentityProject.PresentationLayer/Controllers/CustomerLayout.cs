@@ -2,7 +2,7 @@
 
 namespace EasyCashIdentityProject.PresentationLayer.Controllers
 {
-    public class MyProfileController : Controller
+    public class CustomerLayout : Controller
     {
         public IActionResult Index()
         {
